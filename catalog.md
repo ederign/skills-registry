@@ -109,16 +109,16 @@ v2.0.0 | [fullsend-ai/odh-test-gen](https://github.com/fullsend-ai/odh-test-gen)
 
 Tags: test-plan, test-cases, quality, strategy, review, scoring, automation, playwright, ui-testing
 
-| Skill | Description | Functions | Metrics |
-|-------|-------------|-----------|---------|
-| `/test-plan-create` | Generate a test plan from a strategy | `plan`, `generate` | `task_success` (`judge`) |
-| `/test-plan-create-cases` | Generate test case files from a test plan | `generate` | `task_success` (`judge`) |
-| `/test-plan-update` | Update test plan with new docs (ADR, API specs), re-analyze, bump version | `transform` | `task_success` (`judge`) |
-| `/test-plan-case-implement` | Generate executable test automation code from TC specifications with intelligent placement | `generate` | `task_success` (`judge`) |
-| `/test-plan-ui-verify` | Verify UI test cases from a PR against a live ODH/RHOAI cluster via Playwright; supports upgrade testing workflow | `verify` | `task_success` (`judge`) |
-| `/test-plan-publish` | Publish test plan artifacts to GitHub with PR creation | `execute` | `task_success` (`deterministic`) |
-| `/test-plan-resolve-feedback` | Assess and resolve PR review comments on test plans | `review`, `transform` | `task_success` (`judge`) |
-| `/test-plan-score` | Score test plan quality using rubric without auto-revision | `review` | `task_success` (`judge`) |
+| Skill | Description |
+|-------|-------------|
+| `/test-plan-create` | Generate a test plan from a strategy |
+| `/test-plan-create-cases` | Generate test case files from a test plan |
+| `/test-plan-update` | Update test plan with new docs (ADR, API specs), re-analyze, bump version |
+| `/test-plan-case-implement` | Generate executable test automation code from TC specifications with intelligent placement |
+| `/test-plan-ui-verify` | Verify UI test cases from a PR against a live ODH/RHOAI cluster via Playwright; supports upgrade testing workflow |
+| `/test-plan-publish` | Publish test plan artifacts to GitHub with PR creation |
+| `/test-plan-resolve-feedback` | Assess and resolve PR review comments on test plans |
+| `/test-plan-score` | Score test plan quality using rubric without auto-revision |
 
 ```bash
 /plugin install test-plan@opendatahub-skills
